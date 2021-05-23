@@ -1,295 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+/* -------------------------  start of rafef --------------------- */
 
-body, html {
-    height: 100%;
-    margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: 'Emilys Candy', cursive; */
-    font-family: 'Dancing Script', cursive;
-  }
-  h1{
-    font-size: 80px;
-    text-align: center;
+#about {
+  display: inline-block;
 
-  }
-  p{
-    font-size: x-large;
-    text-align: center;  
-  }
-  /* background header image */
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-  }
+  margin-top: 100px;
+  width: 40%;
+  margin-left: 200px;
 
-  /* how to make slide  */
-  .crossfade > figure {
-    animation: imageAnimation 30s linear infinite 0s;
-    backface-visibility: hidden;
-    background-size: cover;
-    background-position: center center;
-    color: transparent;
-    height: 80%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 0;
-  }
-  .crossfade > figure:nth-child(1) { background-image: url('https://wallpaperaccess.com/full/196127.jpg'); }
+  padding: 10px;
+}
+#aboutImg {
+  display: inline-block;
+  margin-top: -300px;
+  margin-left: 400px;
+}
+
+.aboutp {
+  color: rgb(92, 90, 90);
+  font-family: "Caveat", cursive;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 20px;
+}
+#myh2 {
+  color: #e077dd;
+  font-family: "Abril Fatface", cursive;
+  padding-left: 100px;
+  font-weight: bold;
+  font-size: 25px;
+}
+#aboutImg img {
+  width: 40%;
+  height: 50%;
+  float: right;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mymain {
+  padding: 30px 0;
+  margin-top: 50px;
+  background-color: #46e3f8;
+}
+
+/* -------------------------  end of rafef --------------------- */
+
+/* -------------------------  staret of dina --------------------- */
+
+.social li {
+  color: rgba(235, 243, 234, 0.897);
+  list-style-type: none;
+  display: inline-table;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
+  padding: 2%;
+  border: 0.5px solid rgba(213, 206, 230, 0.4);
+  cursor: pointer;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  transition: ease 0.7s;
+  text-align: center;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  vertical-align: middle;
+  /* &:hover {
+    color: rgba(167, 146, 129, 1);
+    border: 1px solid rgba(167, 146, 129, 1);
+  } */
+}
+
+#ourteam .social:hover > li {
+  opacity: 0.5;
+}
+
+#ourteam .social:hover > li:hover {
+  opacity: 1;
+}
+
+#ourteam #copyright {
+  color: rgb(179, 159, 163);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  bottom: auto;
+}
+
+#ourteam #base {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-small;
+  font-weight: lighter;
+  color: rgb(145, 125, 125);
+}
+#ourteam .button {
+  margin-top: 10px;
+  border: none;
+  outline: 5;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.team-members {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#ourteam .card {
+  /* float: left; */
+  display: inline-block;
+  width: 18%;
+  background-color: #eee;
+  padding: 30px;
+}
+
+#ourteam h1 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 20px;
+}
+/* -------------------------  end of dina --------------------- */
+/* ------------------------- start of ethar -------------------*/
+#gift {
+  font-family: "Dancing Script", cursive;
+}
+#okashi {
+  font-size: 80px;
+  text-align: center;
+}
+#candygifts {
+  font-size: x-large;
+  text-align: center;
+}
+/* background header image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url();
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+
+  transform: translate(400%, -500%);
+  color: rgb(0, 0, 0);
+}
+
+/* how to make slide  */
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 80%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+.crossfade > figure:nth-child(1) {
+  background-image: url("https://wallpaperaccess.com/full/196127.jpg");
+}
 
 .crossfade > figure:nth-child(2) {
   animation-delay: 6s;
-  background-image: url('https://img1.goodfon.com/wallpaper/nbig/c/12/box-gift-chocolate-candy.jpg');
+  background-image: url("https://img1.goodfon.com/wallpaper/nbig/c/12/box-gift-chocolate-candy.jpg");
 }
 
 .crossfade > figure:nth-child(3) {
   animation-delay: 12s;
-  background-image: url('https://img4.goodfon.com/wallpaper/nbig/3/c3/konfety-rozovyi-fon-zhevatelnye-konfety-rozhok.jpg');
+  background-image: url("https://img4.goodfon.com/wallpaper/nbig/3/c3/konfety-rozovyi-fon-zhevatelnye-konfety-rozhok.jpg");
 }
 
 .crossfade > figure:nth-child(4) {
   animation-delay: 18s;
-  background-image: url('https://wallpaperaccess.com/full/5504190.jpg');
+  background-image: url("https://wallpaperaccess.com/full/5504190.jpg");
 }
 
 .crossfade > figure:nth-child(5) {
   animation-delay: 24s;
-  background-image: url('https://s1.1zoom.me/big3/278/Sweets_Lollipop_Candy_Marmalade_Colored_background_555251_3000x2000.jpg');
+  background-image: url("https://s1.1zoom.me/big3/278/Sweets_Lollipop_Candy_Marmalade_Colored_background_555251_3000x2000.jpg");
 }
-@keyframes 
-imageAnimation {  0% {
- animation-timing-function: ease-in;
- opacity: 0;
-}
- 8% {
- animation-timing-function: ease-out;
- opacity: 1;
-}
- 17% {
- opacity: 1
-}
- 25% {
- opacity: 0
-}
- 100% {
- opacity: 0
-}
-
-
-  
-  #social-test {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 70px;}
-    .social {
-      padding-left: 200px;
-    }
-     ul li {
-      color: rgba(235, 243, 234, 0.897);
-      list-style-type: none;
-display: inline-table;
-      width: 80px;
-      height: 80px;
-      line-height: 40px;
-      padding: 2%;
-      border: .5px solid rgba(213, 206, 230, 0.4);
-      cursor: pointer;
-      margin-left: 25px;
-      margin-bottom: 25px;
-      transition: ease .7s;
-      text-align: center;
-      /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
-      vertical-align: middle;
-      /* &:hover {
-        color: rgba(167, 146, 129, 1);
-        border: 1px solid rgba(167, 146, 129, 1);
-      } */
-    }
-  
-  
-  .social:hover > li {
-    opacity: 0.5;
+@keyframes imageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
   }
-  
-  .social:hover > li:hover {
+  8% {
+    animation-timing-function: ease-out;
     opacity: 1;
   }
-
-  #copyright{
-color: rgb(179, 159, 163);
-text-align: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-bottom: auto;}
-
-#base{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont,
-     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: lighter;
-font-size: x-small;
-font-weight: lighter;
-color: rgb(145, 125, 125);
-
-
-}
-.button {
-    border: none;
-    outline: 5;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+  17% {
+    opacity: 1;
   }
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+  25% {
+    opacity: 0;
   }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  100% {
+    opacity: 0;
   }
-  .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 30px;
-  }
-  h1{
-      text-align: center;
-      font-family: 'Amatic SC', cursive;
-      font-size: xx-large;
-      font-weight: bolder;
-      padding: 20px;
-  }
-
-html {
-    scroll-behavior: smooth;
-  }
-
-nav {
-  /* background-color: white; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  margin-top: 0px;
-  position: fixed;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202));
-  width: 100%;
-  height: 55px;
-  margin-bottom: 100px;
 }
-
-ul li  {
-  display: inline;
-  width:25px;
-  line-height: 20px;
+header {
+  margin-bottom: 775px;
 }
-
-ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  margin-left: 25px;
-  padding: 15px;
-  width: 20px;
-  padding: auto;
-}
-section {
-  height: 100vh;
-  margin: 1em 0;
-  /* background: gold; */
-}
-
-.active {
-  background: silver;
-  border-bottom: 3px solid red;
-  
-}
-nav #myInput{
-    float: right;
-    position: relative;
-    margin-left: 61%;
-    height: 25px;
-
-}
-
-
-* {
-    box-sizing: border-box;
-  }
-
-#about {
-    display: inline-block;
-    
-    margin-top: 100px;
-    width: 40%;
-    margin-left: 100px;
-    
-    padding: 10px;
-    
-    
-}
-#aboutImg {
-    display: inline-block;  
-    margin-top: -300px;
-}
-
-div p {
-    color:rgb(92, 90, 90);
-    font-family: 'Caveat', cursive;
-    font-weight: bolder;
-    font-size: larger;
-    padding: 20px;
-}
-div h2 {
-    color:#e077dd;
-    font-family: 'Abril Fatface', cursive;
-    padding-left: 40px;
-    font-weight: bold;
-    font-size: 25px;
-}
-div img {
-    width: 30% ;
-    height: 50%;
-    float: right;
-    margin-right: 300px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    
-}
-main {
-    background-color: #76edfd;
-
-}
-
+/* ------------------------- end of ethar -------------------*/
