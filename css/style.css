@@ -51,50 +51,53 @@
 /* -------------------------  staret of dina --------------------- */
 
 .social li {
-  color: rgba(235, 243, 234, 0.897);
-  list-style-type: none;
-  display: inline-table;
-  width: 80px;
-  height: 80px;
-  line-height: 40px;
-  padding: 2%;
-  border: 0.5px solid rgba(213, 206, 230, 0.4);
-  cursor: pointer;
-  margin-left: 25px;
-  margin-bottom: 25px;
-  transition: ease 0.7s;
-  text-align: center;
-  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
-  vertical-align: middle;
-  /* &:hover {
-    color: rgba(167, 146, 129, 1);
-    border: 1px solid rgba(167, 146, 129, 1);
-  } */
-}
+    color: rgba(92, 126, 121, 0.897);
+    list-style-type: none;
+    display: inline-table;
+    width: 80px;
+    height: 70px;
+    line-height: 40px;
+    padding: 2%;
+    border: 1.5px solid rgba(138, 133, 153, 0.4);
+    cursor: pointer;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    transition: ease 0.9s;
+    text-align: center;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    vertical-align: middle;
+    /* &:hover {
+      color: rgba(167, 146, 129, 1);
+      border: 1px solid rgba(167, 146, 129, 1);
+    } */
+  }
 
-#ourteam .social:hover > li {
+
+/* .social:hover > li {
   opacity: 0.5;
+  background-color: rgb(117, 124, 124);
+
 }
 
 #ourteam .social:hover > li:hover {
   opacity: 1;
-}
+} */
 
-#ourteam #copyright {
-  color: rgb(179, 159, 163);
+ #copyright {
+  color: rgb(61, 53, 35);
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   bottom: auto;
 }
 
-#ourteam #base {
+ #base {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: lighter;
   font-size: x-small;
   font-weight: lighter;
-  color: rgb(145, 125, 125);
+  color: rgb(61, 53, 53);
 }
 #ourteam .button {
   margin-top: 10px;
@@ -102,11 +105,13 @@
   outline: 5;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: rgba(204, 216, 202, 0.897);
+  background-color: rgb(27, 27, 27);
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-family: "Amatic SC", cursive;
+font-size: larger;
 }
 
 .team-members {
@@ -118,9 +123,16 @@
 #ourteam .card {
   /* float: left; */
   display: inline-block;
-  width: 18%;
-  background-color: #eee;
-  padding: 30px;
+  width: 220px;
+  background-color: rgba(92, 126, 121, 0.300);
+  padding: 10px;
+  margin: 20px;
+  /* font-family: "Amatic SC", cursive; */
+  /* font-family: "Abril Fatface", cursive; */
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: larger;
+  font-weight:bolder;
 }
 
 #ourteam h1 {
@@ -129,6 +141,35 @@
   font-size: xx-large;
   font-weight: bolder;
   padding: 20px;
+  font-size: 100px;
+}
+#h2dena{
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-family: "Amatic SC", cursive;
+  bottom: 80px;}
+
+  .social,
+#copyrightSection {
+  margin: 20px 0;
+  text-align: center;
+}
+.social li:hover {
+  color: black;
+}
+footer{
+  background-color: rgba(225, 235, 223, 0.897);
+  width: 1350px;
+}
+form {
+  border: 3px solid #f1f1f1;
+  font-family: "Amatic SC", cursive;
+}
+#formh2{
+  font-family: "Amatic SC", cursive;
+font-size: xx-large;
 }
 /* -------------------------  end of dina --------------------- */
 /* ------------------------- start of ethar -------------------*/
@@ -136,9 +177,11 @@
   font-family: "Dancing Script", cursive;
 }
 #okashi {
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
-}
+  font-family: 'Reggae One', cursive;
+  color: rgb(226, 185, 131);
+top: 50px;}
 #candygifts {
   font-size: x-large;
   text-align: center;
