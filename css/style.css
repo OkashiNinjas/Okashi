@@ -222,4 +222,62 @@
 header {
   margin-bottom: 775px;
 }
+/* text row css by Ethar */
+.text-row span,.text-row div{
+  display: inline-block;
+  margin: 0px 50px;
+
+}
+.text-dark-grey, .text-hover-dark-grey:hover, .text-dark-gray, .text-hover-dark-gray:hover {
+  color: #fff!important;
+  background-color: hsl(281, 36%, 64%)!important;
+}
+.text-padding-16 {
+  padding-top: 16px!important;
+  padding-bottom: 16px!important;
+}
+.text-center {
+  text-align: center!important;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div #row {
+  display: block;
+}
+#row, html {
+  height: 100%;
+  
+  line-height: 1.8;
+}
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+html, #row {
+
+  font-size: 18px;
+ 
+}
+html {
+  
+  -webkit-text-size-adjust: 100%;
+}
+.text-container:after, .text-container:before, .text-panel:after, .text-panel:before, .text-row:after, .text-row:before, .text-row-padding:after, .text-row-padding:before, .text-cell-row:before, .text-cell-row:after, .text-clear:after, .text-clear:before, .text-bar:before, .text-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.text-container:after, .text-container:before, .text-panel:after, .text-panel:before, .text-row:after, .text-row:before, .text-row-padding:after, .text-row-padding:before, .text-cell-row:before, .text-cell-row:after, .text-clear:after, .text-clear:before, .text-bar:before, .text-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* ------------------------- end of ethar -------------------*/
