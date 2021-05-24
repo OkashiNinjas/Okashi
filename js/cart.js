@@ -22,7 +22,6 @@ function getLocalStorage() {
       );
     }
   }
-  console.log(productsList);
 }
 function setLocalStorage() {
   localStorage.removeItem("products");
@@ -85,23 +84,23 @@ product.prototype.render = function () {
 
   productinfo.appendChild(document.createElement("br"));
 
-  let quantity = document.createElement("select");
-  quantity.setAttribute("id", `quantity${Index}`);
-  quantity.setAttribute("name", `quantity${Index}`);
-  quantity.setAttribute("onchange", `updateQuantity(this)`);
+  // let quantity = document.createElement("select");
+  // quantity.setAttribute("id", `quantity${Index}`);
+  // quantity.setAttribute("name", `quantity${Index}`);
+  // quantity.setAttribute("onchange", `updateQuantity(this)`);
 
-  let option;
-  for (let i = 1; i <= 10; i++) {
-    option = document.createElement("option");
-    option.textContent = i;
-    option.setAttribute("value", i);
-    quantity.appendChild(option);
-  }
-  productinfo.appendChild(quantity);
+  // let option;
+  // for (let i = 1; i <= 10; i++) {
+  //   option = document.createElement("option");
+  //   option.textContent = i;
+  //   option.setAttribute("value", i);
+  //   quantity.appendChild(option);
+  // }
+  // productinfo.appendChild(quantity);
 
   let deleteButton = document.createElement("button");
   deleteButton.className = "deletButton";
-  deleteButton.textContent = "🗙";
+  deleteButton.textContent = "remove item";
   deleteButton.setAttribute("onclick", `dleteProduct(${Index})`);
   productinfo.appendChild(deleteButton);
 

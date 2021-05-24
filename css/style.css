@@ -4,6 +4,7 @@
 html {
   margin: 0 auto;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* -------------------------  start of rafef --------------------- */
@@ -17,11 +18,10 @@ html {
 
   padding: 10px;
 }
-
 #aboutImg {
   display: inline-block;
   margin-top: -300px;
-  margin-left: 250px;
+  margin-left: 400px;
 }
 
 .aboutp {
@@ -43,13 +43,90 @@ html {
   height: 50%;
   float: right;
   margin-bottom: 20px;
+  margin-right: 20px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #mymain {
   padding: 30px 0;
-  /* margin-top: 50px; */
+  margin-top: 50px;
   background-color: #eee;
+  margin-bottom: 20px;
+}
+.effect {
+  display: inline-block;
+  width: 310px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#gallary {
+  position: relative;
+  margin-left: 12px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(94, 92, 92, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 310px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.overlay-imgs {
+  display: inline-block;
+}
+
+.overlay-imgs:hover .overlay {
+  opacity: 1;
+}
+
+.locatin {
+  display: inline-block;
+  margin: 1px;
+}
+#mapid {
+  display: inline-block;
+  padding: 20px;
+  margin-left: 17px;
+}
+
+#branches {
+  padding: 20px;
+}
+#branches p {
+  font-size: 40px;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.info {
+  margin: 20px;
+  position: relative;
+  bottom: 430px;
+  left: 500px;
+}
+.info li {
+  font-size: 25px;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  padding: 10px;
+}
+
+.liel {
+  margin-left: 5px;
+  padding-left: 20px;
 }
 
 /* -------------------------  end of rafef --------------------- */
@@ -57,18 +134,18 @@ html {
 /* -------------------------  staret of dina --------------------- */
 
 .social li {
-  color: rgba(235, 243, 234, 0.897);
+  color: rgba(92, 126, 121, 0.897);
   list-style-type: none;
   display: inline-table;
   width: 80px;
-  height: 80px;
+  height: 70px;
   line-height: 40px;
   padding: 2%;
-  border: 0.5px solid rgba(213, 206, 230, 0.4);
+  border: 1.5px solid rgba(138, 133, 153, 0.4);
   cursor: pointer;
   margin-left: 25px;
   margin-bottom: 25px;
-  transition: ease 0.7s;
+  transition: ease 0.9s;
   text-align: center;
   /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
   vertical-align: middle;
@@ -78,29 +155,29 @@ html {
   } */
 }
 
-#ourteam .social:hover > li {
-  opacity: 0.5;
+/* .social:hover > li {
+opacity: 0.5;
+background-color: rgb(117, 124, 124);
 }
-
 #ourteam .social:hover > li:hover {
-  opacity: 1;
-}
+opacity: 1;
+} */
 
-#ourteam #copyright {
-  color: rgb(179, 159, 163);
+#copyright {
+  color: rgb(61, 53, 35);
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   bottom: auto;
 }
 
-#ourteam #base {
+#base {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: lighter;
   font-size: x-small;
   font-weight: lighter;
-  color: rgb(145, 125, 125);
+  color: rgb(61, 53, 53);
 }
 #ourteam .button {
   margin-top: 10px;
@@ -108,36 +185,53 @@ html {
   outline: 5;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: rgba(204, 216, 202, 0.897);
+  background-color: rgb(27, 27, 27);
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-family: "Amatic SC", cursive;
+  font-size: larger;
 }
 
 .team-members {
-  /* padding: 0 50px; */
+  padding: 0 50px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 #ourteam .card {
   /* float: left; */
   display: inline-block;
-  width: 200px;
-  background-color: #eee;
+  width: 220px;
+  background-color: rgba(92, 126, 121, 0.3);
+  padding: 10px;
   margin: 20px;
+  /* font-family: "Amatic SC", cursive; */
+  /* font-family: "Abril Fatface", cursive; */
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
 }
-.card img {
-  margin: 0 auto;
-}
+
 #ourteam h1 {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-size: xx-large;
   font-weight: bolder;
   padding: 20px;
+  font-size: 100px;
 }
+#h2dena {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-family: "Amatic SC", cursive;
+  bottom: 80px;
+}
+
 .social,
 #copyrightSection {
   margin: 20px 0;
@@ -145,6 +239,18 @@ html {
 }
 .social li:hover {
   color: black;
+}
+footer {
+  background-color: rgba(225, 235, 223, 0.897);
+  width: 1350px;
+}
+form {
+  border: 3px solid #f1f1f1;
+  font-family: "Amatic SC", cursive;
+}
+#formh2 {
+  font-family: "Amatic SC", cursive;
+  font-size: xx-large;
 }
 /* -------------------------  end of dina --------------------- */
 /* ------------------------- start of ethar -------------------*/
@@ -239,7 +345,7 @@ html {
 }
 header {
   margin-bottom: 775px;
-}
+} 
 */
 @keyframes headerAnimation {
   0% {
@@ -284,13 +390,77 @@ header {
 .hero-text #candygifts {
   font-size: 40px;
 }
+/* text row css by Ethar */
+.text-row span,
+.text-row div {
+  display: inline-block;
+  margin: 0px 50px;
+}
+.text-dark-grey,
+.text-hover-dark-grey:hover,
+.text-dark-gray,
+.text-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: hsl(281, 36%, 64%) !important;
+}
+.text-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.text-center {
+  text-align: center !important;
+}
+
+#row {
+  display: block;
+  height: 100%;
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.text-container:after,
+.text-container:before,
+.text-panel:after,
+.text-panel:before,
+.text-row:after,
+.text-row:before,
+.text-row-padding:after,
+.text-row-padding:before,
+.text-cell-row:before,
+.text-cell-row:after,
+.text-clear:after,
+.text-clear:before,
+.text-bar:before,
+.text-bar:after,
+.text-container:after,
+.text-container:before,
+.text-panel:after,
+.text-panel:before,
+.text-row:after,
+.text-row:before,
+.text-row-padding:after,
+.text-row-padding:before,
+.text-cell-row:before,
+.text-cell-row:after,
+.text-clear:after,
+.text-clear:before,
+.text-bar:before,
+.text-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 /* ------------------------- end of ethar -------------------*/
 
 /* --------------------------- start of qassem----------------------- */
-
 nav {
-  /* background-color: white; */
-  z-index: 10;
+  background-color: white;
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -301,13 +471,7 @@ nav {
   margin-top: 0px;
   position: fixed;
   margin-bottom: 20px;
-  background: linear-gradient(
-    to right,
-    red,
-    rgb(95, 7, 7),
-    purple,
-    rgb(202, 91, 202)
-  );
+  /* background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202)); */
   width: 100%;
   height: 55px;
   margin-bottom: 100px;
@@ -321,30 +485,49 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(5, 4, 4);
   font-size: 20px;
   margin-left: 25px;
   padding: 15px;
   width: 20px;
   padding: auto;
 }
-/* section {
-  height: 100vh;
-  margin: 1em 0;
-   background: gold; 
+
+nav ul li i {
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+  font-size: 20px;
+  margin-left: 25px;
+  padding: 15px;
+  width: 20px;
+  padding: auto;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid hsl(281, 36%, 64%);
+}
+nav ul:hover .active {
+  border-bottom: none;
+}
+.active {
+  border-bottom: 3px solid hsl(281, 36%, 64%);
 }
 
-.active {
-  background: silver;
-  border-bottom: 3px solid gold;
-} 
-nav #myInput {
-  float: right;
-  position: relative;
-  margin-left: 61%;
-  height: 25px;
-}*/
-nav #myInput {
-  display: none;
+#myBtnToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: black;
+  cursor: pointer;
+  font-size: 45px;
+  background-color: transparent;
+  border: none;
+}
+
+#myBtnToTop:hover {
+  color: #555;
+}
+#cart {
+  color: red;
 }
 /*  ------------------------end of qassem ---------------------- */

@@ -42,9 +42,18 @@ html {
   width: 100%;
   background-color: #eee;
 }
-
+.products-list {
+  margin-top: 50px;
+  min-height: 400px;
+  background: #eee;
+  border: 1px solid black;
+}
 hr {
   clear: both;
+}
+hr:last-child {
+  clear: both;
+  visibility: hidden;
 }
 #quantity {
   border-radius: 15%;
@@ -56,5 +65,20 @@ hr {
   color: red;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 50px;
+}
+#checkout {
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(255, 238, 0);
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-bottom: 50px;
+}
+#checkout:hover {
+  background: rgb(255, 217, 2);
+}
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
 }
