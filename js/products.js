@@ -91,7 +91,14 @@ let test11 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
 let test21 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
 let test31 = new product("Air Heads", "Candy", 2, 5, "../img/p2.webp");
 let test41 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
-
+let test12 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
+let test22 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
+let test32 = new product("Air Heads", "Candy", 2, 3, "../img/p2.webp");
+let test42 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
+let test121 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
+let test221 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
+let test321 = new product("Air Heads", "Candy", 2, 5, "../img/p2.webp");
+let test421 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
 // let test = document.getElementsByClassName("h-bg");
 // for (let i = 0; i < test.length; i++) {
 //   test[i].style.backgroundColor =
