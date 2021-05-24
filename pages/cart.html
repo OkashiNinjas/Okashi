@@ -14,41 +14,38 @@
     />
   </head>
   <body>
-    <div class="products-list">
-      <ul>
-        <li>
-          <div class="product">
-            <div class="product-img">
-              <img src="../img/p1.jpg" alt="" />
-            </div>
-            <div class="product-info">
-              <h1>Product Name</h1>
-              <h2>Category</h2>
-              <input type="checkbox" name="isGift" id="isGift" />
-              <label for="isGift">This is a gift</label>
-              <br />
-              <label for="quantity">Quantity</label>
-              <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-            <div class="product-price">
-              <h1>100 $</h1>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <h1 id="CartCounter" style="text-align: center; font-size: 50px">0</h1>
 
-    <div class="testing">
-      <div class="hero-text">
-        <h1 id="okashi">Okashi</h1>
-        <p id="candygifts">Candy & Gifts Store</p>
+    <div class="products-list">
+      <div class="plist">
+        <!-- <div class="product">
+          <div class="product-img">
+            <img src="../img/p1.jpg" alt="" />
+          </div>
+          <div class="product-info">
+            <h1>Product Name</h1>
+            <h2>Category</h2>
+            <input type="checkbox" name="isGift" id="isGift" />
+            <label for="isGift">This is a gift</label>
+            <br />
+            <label for="quantity">Quantity</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <button>Delete</button>
+          </div>
+          <div class="product-price">
+            <h1>100 $</h1>
+          </div>
+        </div> -->
       </div>
     </div>
+    <h1 id="TotalPrice" style="text-align: center; font-size: 50px">0</h1>
+
+    <script src="../js/cart.js"></script>
   </body>
 </html>

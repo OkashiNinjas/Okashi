@@ -1,62 +1,60 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  width: 1000px;
+  margin: 0 auto;
+}
+.plist {
+  background-color: #eee;
+}
 .product-img {
   float: left;
+  padding: 20px 0 20px 20px;
+}
+.product-img img {
+  width: 320px;
+  height: 320px;
+  border: 1px solid black;
 }
 .product-info {
-  margin-top: 100px;
+  margin: 20px;
+  font-size: 32px;
   float: left;
+}
+.product-info h1 {
+  font-weight: bold;
+}
+.product-info label {
+  font-size: 20px;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  opacity: 0.7;
 }
 .product-price {
   float: right;
+  font-size: 32px;
+  margin: 50px 50px 0 0;
 }
 .product {
   width: 100%;
-  background-color: red;
+  background-color: #eee;
 }
 
-@keyframes headerAnimation {
-  0% {
-    background-image: url("https://wallpaperaccess.com/full/196127.jpg");
-    background-size: cover;
-  }
-  25% {
-    background-image: url("https://img1.goodfon.com/wallpaper/nbig/c/12/box-gift-chocolate-candy.jpg");
-    background-size: cover;
-  }
-
-  50% {
-    background-image: url("https://img4.goodfon.com/wallpaper/nbig/3/c3/konfety-rozovyi-fon-zhevatelnye-konfety-rozhok.jpg");
-    background-size: cover;
-  }
-  75% {
-    background-image: url("https://wallpaperaccess.com/full/5504190.jpg");
-    background-size: cover;
-  }
-  100% {
-    background-image: url("https://s1.1zoom.me/big3/278/Sweets_Lollipop_Candy_Marmalade_Colored_background_555251_3000x2000.jpg");
-    background-size: cover;
-  }
-}
-
-.hero-image {
+hr {
   clear: both;
-  position: relative;
-  width: 100%;
-  height: 900px;
-  animation: headerAnimation 10s ease-in-out infinite;
 }
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 80px;
-  font-family: "Dancing Script", cursive;
-  color: rgb(0, 0, 0);
+#quantity {
+  border-radius: 15%;
+  padding: 10px 20px;
 }
-.hero-text #candygifts {
-  font-size: 40px;
+.deletButton {
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 50px;
 }
