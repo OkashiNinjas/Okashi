@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
+    <nav id="navBar">
       <ul>
         <li id="linkTop" class="links">
           <a href="#top" class="linkss">Home</a>
@@ -25,19 +25,12 @@
           <a href="#about" class="linkss">About Us</a>
         </li>
       </ul>
-      <input
-        type="text"
-        id="myInput"
-        onkeyup="myFunction()"
-        placeholder="Search for names.."
-        title="Type in a name"
-      />
     </nav>
-    <section id="top">Home</section>
-    <section id="Gift">Gift & More</section>
-    <section id="contact">Contact</section>
-    <section id="about">About Us</section>
-    <footer></footer>
+    <footer>
+      <button onclick="scrollTopFunction()" id="myBtnToTop" title="Go to top">
+        Top
+      </button>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>

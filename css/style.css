@@ -14,21 +14,21 @@ nav {
   margin-top: 0px;
   position: fixed;
   margin-bottom: 20px;
-  background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202));
+  /* background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202)); */
   width: 100%;
   height: 55px;
   margin-bottom: 100px;
 }
 
-ul li  {
+nav ul li  {
   display: inline;
   width:25px;
   line-height: 20px;
 }
 
-ul li a {
+nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(5, 4, 4);
   font-size: 20px;
   margin-left: 25px;
   padding: 15px;
@@ -43,7 +43,7 @@ section {
 
 .active {
   background: silver;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid gold;
   
 }
 nav #myInput{
@@ -53,4 +53,45 @@ nav #myInput{
     height: 25px;
 
 }
+#myBtnToTop {
+  display: none;
+  padding: 15px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+ 
+  
+}
 
+#myBtnToTop:hover {
+  background-color: #555;
+}
+#myBtnToTop {
+  display: none;
+  padding: 15px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+ 
+  
+}
+
+#myBtnToTop:hover {
+  background-color: #555;
+}
