@@ -1,93 +1,129 @@
+let productsList = [];
 function product(pNmae, pCategory, pPrice, pRait, pImgPath) {
   this.pNmae = pNmae;
   this.pCategory = pCategory;
   this.pPrice = pPrice;
   this.pRait = pRait;
   this.pImgPath = pImgPath;
+  productsList.push(this);
   this.render();
+}
+function getLocalStorage() {
+  let local = JSON.parse(localStorage.getItem("products"));
+  productsList = [];
+  if (local != null) {
+    for (let i = 0; i < local.length; i++) {
+      new product(
+        local[i].pNmae,
+        local[i].pCategory,
+        local[i].pPrice,
+        local[i].pRait,
+        local[i].pImgPath
+      );
+    }
+  }
+}
+function setLocalStorage() {
+  localStorage.removeItem("products");
+  localStorage.setItem("products", JSON.stringify(productsList));
+}
+function dleteProduct(elemnt) {
+  let local = [];
+  for (let i = 0; i < productsList.length; i++) {
+    if (i != elemnt) {
+      local.push(productsList[i]);
+    }
+  }
+  productsList = local;
+
+  let TotalPrice = document.getElementById("TotalPrice");
+  TotalPrice.textContent = "";
+  setLocalStorage();
+  let pList = document.getElementsByClassName("plist")[0];
+  pList.textContent = "";
+  getLocalStorage();
+  if (productsList.length == 0) {
+    let counter = document.getElementById("CartCounter");
+    counter.textContent = 0;
+    TotalPrice.textContent = 0;
+  }
 }
 
 product.prototype.render = function () {
-  let allProducts = document.getElementById("all-products");
-
-  let productDiv = document.createElement("div");
-  productDiv.className = "product";
-
+  let Index = productsList.length - 1;
+  let pList = document.getElementsByClassName("plist")[0];
+  let product = document.createElement("div");
+  product.className = "product";
+  let productimgDiv = document.createElement("div");
+  productimgDiv.className = "product-img";
   let productIMG = document.createElement("img");
-  productIMG.className = "product-img";
-  productIMG.src = this.pImgPath;
-  productDiv.appendChild(productIMG);
-  allProducts.appendChild(productDiv);
-  //   let hoverDiv = document.createElement("div");
-  //   hoverDiv.className = "black";
-  //   productDiv.appendChild(hoverDiv);
-  //   allProducts.appendChild(productDiv);
+  productIMG.setAttribute("src", this.pImgPath);
+  productimgDiv.appendChild(productIMG);
+  product.appendChild(productimgDiv);
 
-  let div = document.createElement("div");
+  let productinfo = document.createElement("div");
+  productinfo.className = "product-info";
 
-  let productCategory = document.createElement("span");
-  productCategory.className = "product-category";
-  productCategory.textContent = this.pCategory;
-  div.appendChild(productCategory);
+  let h1 = document.createElement("h1");
+  h1.textContent = this.pNmae;
+  let h2 = document.createElement("h2");
+  h2.textContent = this.pCategory;
+  productinfo.appendChild(h1);
+  productinfo.appendChild(h2);
 
-  let productName = document.createElement("span");
-  productName.className = "product-name";
-  productName.textContent = this.pNmae;
-  div.appendChild(productName);
+  let checkbox = document.createElement("input");
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("name", `isGift${Index}`);
+  checkbox.setAttribute("id", `isGift${Index}`);
+  productinfo.appendChild(checkbox);
 
-  let raitingDiv = document.createElement("div");
-  raitingDiv.className = "product-rating";
+  let checkboxLable = document.createElement("label");
+  checkboxLable.textContent = "This is a gift ";
+  checkboxLable.setAttribute("for", `isGift${Index}`);
+  productinfo.appendChild(checkboxLable);
 
-  let star;
-  for (let i = 1; i <= 5; i++) {
-    star = document.createElement("span");
-    if (i <= this.pRait) {
-      star.className = "fa fa-star checked";
-    } else {
-      star.className = "fa fa-star ";
-    }
-    raitingDiv.appendChild(star);
-  }
+  productinfo.appendChild(document.createElement("br"));
 
-  div.appendChild(raitingDiv);
-  productDiv.appendChild(div);
+  // let quantity = document.createElement("select");
+  // quantity.setAttribute("id", `quantity${Index}`);
+  // quantity.setAttribute("name", `quantity${Index}`);
+  // quantity.setAttribute("onchange", `updateQuantity(this)`);
 
-  let elwrapper = document.createElement("div");
-  elwrapper.className = "el-wrapper";
-  let boxdown = document.createElement("div");
-  boxdown.className = "box-down";
-  let hbg = document.createElement("div");
-  hbg.className = "h-bg";
-  let hbginner = document.createElement("div");
-  hbginner.className = "h-bg-inner";
-  hbg.appendChild(hbginner);
-  boxdown.appendChild(hbg);
+  // let option;
+  // for (let i = 1; i <= 10; i++) {
+  //   option = document.createElement("option");
+  //   option.textContent = i;
+  //   option.setAttribute("value", i);
+  //   quantity.appendChild(option);
+  // }
+  // productinfo.appendChild(quantity);
 
-  let a = document.createElement("a");
-  a.className = "cart";
-  a.setAttribute("href", "#");
+  let deleteButton = document.createElement("button");
+  deleteButton.className = "deletButton";
+  deleteButton.textContent = "remove item";
+  deleteButton.setAttribute("onclick", `dleteProduct(${Index})`);
+  productinfo.appendChild(deleteButton);
+
+  let productPrice = document.createElement("div");
+  productPrice.className = "product-price";
   let priceSpan = document.createElement("span");
-  priceSpan.className = "price";
-  priceSpan.textContent = `${this.pPrice} JD`;
-  let addtocartSpan = document.createElement("span");
-  addtocartSpan.className = "add-to-cart";
-  let textSpan = document.createElement("span");
-  textSpan.className = "txt";
-  textSpan.textContent = "Add in cart";
+  priceSpan.textContent = this.pPrice;
+  productPrice.appendChild(priceSpan);
+  let priceSign = document.createElement("span");
+  priceSign.textContent = " JD";
+  productPrice.appendChild(priceSign);
 
-  a.appendChild(priceSpan);
-  addtocartSpan.appendChild(textSpan);
-  a.appendChild(addtocartSpan);
-  boxdown.appendChild(a);
-  elwrapper.appendChild(boxdown);
-  productDiv.appendChild(elwrapper);
+  product.appendChild(productinfo);
+
+  product.appendChild(productPrice);
+
+  pList.appendChild(product);
+  let hr = document.createElement("hr");
+  pList.appendChild(hr);
+  let counter = document.getElementById("CartCounter");
+  counter.textContent = Index + 1;
+  let TotalPrice = document.getElementById("TotalPrice");
+  TotalPrice.textContent = Number(TotalPrice.textContent) + this.pPrice;
 };
 
-let test1 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
-let test2 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
-let test3 = new product("Air Heads", "Candy", 2, 3, "../img/p2.webp");
-let test4 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
-let test11 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
-let test21 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
-let test31 = new product("Air Heads", "Candy", 2, 5, "../img/p2.webp");
-let test41 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
+getLocalStorage();

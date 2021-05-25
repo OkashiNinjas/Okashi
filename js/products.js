@@ -1,10 +1,27 @@
+let productsArr = [];
+let productsInCart = [];
+
 function product(pNmae, pCategory, pPrice, pRait, pImgPath) {
   this.pNmae = pNmae;
   this.pCategory = pCategory;
   this.pPrice = pPrice;
   this.pRait = pRait;
   this.pImgPath = pImgPath;
+
+  productsArr.push(this);
   this.render();
+}
+
+function setLocalStorage() {
+  localStorage.setItem("products", JSON.stringify(productsInCart));
+}
+function getLocalStorage() {
+  let local = JSON.parse(localStorage.getItem("products"));
+  if (local != null) {
+    productsInCart = local;
+    let counter = document.getElementById("cart");
+    counter.textContent = productsInCart.length;
+  }
 }
 
 product.prototype.render = function () {
@@ -18,10 +35,6 @@ product.prototype.render = function () {
   productIMG.src = this.pImgPath;
   productDiv.appendChild(productIMG);
   allProducts.appendChild(productDiv);
-  //   let hoverDiv = document.createElement("div");
-  //   hoverDiv.className = "black";
-  //   productDiv.appendChild(hoverDiv);
-  //   allProducts.appendChild(productDiv);
 
   let div = document.createElement("div");
 
@@ -54,6 +67,10 @@ product.prototype.render = function () {
 
   let elwrapper = document.createElement("div");
   elwrapper.className = "el-wrapper";
+  elwrapper.setAttribute(
+    "onclick",
+    `addProductToCart(${productsArr.length - 1})`
+  );
   let boxdown = document.createElement("div");
   boxdown.className = "box-down";
   let hbg = document.createElement("div");
@@ -87,14 +104,16 @@ let test1 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
 let test2 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
 let test3 = new product("Air Heads", "Candy", 2, 3, "../img/p2.webp");
 let test4 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
-let test11 = new product("KopiKo", "Candy", 1, 5, "../img/p1.jpg");
-let test21 = new product("Flower Bucket", "Gift", 2, 4, "../img/p3.jpeg");
-let test31 = new product("Air Heads", "Candy", 2, 5, "../img/p2.webp");
-let test41 = new product("Happy Box", "Gift", 20, 5, "../img/p4.jpg");
 
-// let test = document.getElementsByClassName("h-bg");
-// for (let i = 0; i < test.length; i++) {
-//   test[i].style.backgroundColor =
-//     "#" + Math.floor(Math.random() * 16777215).toString(16);
-//   console.log("s");
-// }
+function addProductToCart(index) {
+  for (let i = 0; i < productsArr.length; i++) {
+    if (i == index) {
+      productsInCart.push(productsArr[index]);
+      break;
+    }
+  }
+  let counter = document.getElementById("cart");
+  counter.textContent = productsInCart.length;
+  setLocalStorage();
+}
+getLocalStorage();

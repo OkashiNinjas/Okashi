@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
+    <title>Products</title>
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/products.css" />
     <link rel="stylesheet" href="../css/style.css" />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
@@ -66,19 +65,15 @@
       </div> -->
     </header>
     <main>
-      <div class="products-list">
-        <div class="plist"></div>
-      </div>
-
-      <div id="Total">
-        <p>
-          Subtotal (<span id="CartCounter">0</span> items):
-          <span id="TotalPrice">0</span> JD
-        </p>
-        <button id="checkout">Proceed to checkout</button>
+      <p style="text-align: center; font-size: 50px">
+        items in cart
+        <span id="cart">0</span>
+      </p>
+      <div id="all-products">
+        <script src="../js/products.js"></script>
       </div>
     </main>
-    <footer>
+    <footer style="margin-top: 75px">
       <section id="socialmediabuttons">
         <h2 id="h2dena">Follow us on :</h2>
 
@@ -104,6 +99,5 @@
       src="https://kit.fontawesome.com/bc2402e035.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/cart.js"></script>
   </body>
 </html>
