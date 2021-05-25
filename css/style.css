@@ -6,7 +6,16 @@ html {
   margin: 0 auto;
   scroll-behavior: smooth;
 }
-
+#CounterProductInIndex {
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  margin-left: 810px;
+  font-size: 13px;
+  margin-top: 15px;
+  color: red;
+  
+}
 /* -------------------------  start of rafef --------------------- */
 
 #about {
