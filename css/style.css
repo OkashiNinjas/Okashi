@@ -6,6 +6,16 @@ html {
   margin: 0 auto;
   scroll-behavior: smooth;
 }
+.CounterProductInIndex {
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  margin-left: 755px;
+  font-size: 18px;
+  margin-top: 14px;
+  color:#000;
+  
+}
 
 /* -------------------------  start of rafef --------------------- */
 
@@ -368,7 +378,13 @@ form {
 
 /* --------------------------- start of qassem----------------------- */
 nav {
-  background-color: white;
+  /**/
+  background-color: rgb(240, 232, 232);
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-transition: background-color 2s; /* Safari */
+  transition: background-color 2s;
+  /**/
   z-index: 2;
   position: fixed;
   top: 0;
@@ -390,10 +406,12 @@ nav ul li {
   display: inline;
   width: 25px;
   line-height: 20px;
+
 }
 
 nav ul li a {
   text-decoration: none;
+  opacity: 1;
   color: rgb(5, 4, 4);
   font-size: 20px;
   margin-left: 25px;
@@ -401,7 +419,6 @@ nav ul li a {
   width: 20px;
   padding: auto;
 }
-
 nav ul li i {
   text-decoration: none;
   color: rgb(5, 4, 4);
@@ -420,7 +437,14 @@ nav ul:hover .active {
 .active {
   border-bottom: 3px solid hsl(281, 36%, 64%);
 }
-
+#logo{
+  width: 50px;
+    height: 50px;
+    margin-left: 53%;
+    margin-top: -1px;
+    vertical-align: center;
+    position: absolute;
+}
 #myBtnToTop {
   position: fixed;
   bottom: 20px;
