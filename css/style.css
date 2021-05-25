@@ -6,7 +6,7 @@ html {
   margin: 0 auto;
   scroll-behavior: smooth;
 }
-#CounterProductInIndex {
+.CounterProductInIndex {
   display: block;
   z-index: 1000;
   position: fixed;
