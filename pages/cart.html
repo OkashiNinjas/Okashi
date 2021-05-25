@@ -54,22 +54,6 @@
           <p id="candygifts">Candy & Gifts Store</p>
         </div>
       </div>
-      <!-- <div id="gift">
-        <div class="crossfade">
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-        </div>
-
-        <div class="hero-image">
-          <div class="hero-text">
-            <h1 id="okashi">Okashi</h1>
-            <p id="candygifts">Candy & Gifts Store</p>
-          </div>
-        </div>
-      </div> -->
     </header>
     <main>
       
@@ -83,10 +67,7 @@
                         <div class='line'></div>
                   <div>
                     <table id="checkoutInfo">
-                      <!-- <tr>
-                        <td><span>Product</span></td>
-                        <td><span>100</span> <span>JD</span></td>
-                      </tr> -->
+      
                     </table>
                   </div>
                   <div class='line'></div>
@@ -105,6 +86,7 @@
                         </div>
                        </td></tr>
                     </table>
+                    <form id="payForm">
                     <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
                     Card Number
                     <input class='input-field'  required></input>
@@ -120,8 +102,9 @@
                         </td>
                       </tr>
                     </table>
-                    <button onclick="CorrectOn()" class='pay-btn'>Checkout</button>
-        
+                  </form>
+                    <button  onclick="CorrectOn()" class='pay-btn'>Checkout</button>
+                  
                   </div>
         
                 </div>
@@ -148,26 +131,7 @@
   
     </div>
     
-    <script>
-      function on() {
-        document.getElementById("overlay").style.display = "block";
-      }
-      
-      function off() {
-        document.getElementById("overlay").style.display = "none";
-      }
-      function CorrectOn() {
-      document.getElementById("CorectOverlay").style.display = "block";
-      setTimeout(function(){       document.getElementById("CorectOverlay").style.display = "none";
- }, 1500);
- document.getElementById("overlay").style.display = "none";
 
-    }
-    
-    function CorrectOff() {
-      document.getElementById("CorectOverlay").style.display = "none";
-    }
-      </script>
       <div class="products-list">
         <div class="plist"></div>
       </div>

@@ -22,6 +22,16 @@ function getLocalStorage() {
       );
     }
   }
+  let pList = document.getElementsByClassName("plist")[0];
+  if (pList.textContent == "") {
+    let span = document.createElement("span");
+    span.textContent = "Empty Cart";
+    span.id = "EmptyCart";
+    pList.appendChild(span);
+
+    let checkout = document.getElementById("checkout");
+    checkout.setAttribute("disabled", "disabled");
+  }
 }
 function setLocalStorage() {
   localStorage.removeItem("products");
@@ -96,7 +106,9 @@ product.prototype.render = function () {
 
   let deleteButton = document.createElement("button");
   deleteButton.className = "deletButton";
-  deleteButton.textContent = "remove item";
+  let i = document.createElement("i");
+  i.className = "fas fa-trash-alt";
+  deleteButton.appendChild(i);
   deleteButton.setAttribute("onclick", `dleteProduct(${Index})`);
   productinfo.appendChild(deleteButton);
 
@@ -143,5 +155,93 @@ product.prototype.render = function () {
   TotalPrice = document.getElementsByClassName("TotalPrice")[1];
   TotalPrice.textContent = Number(TotalPrice.textContent) + this.pPrice;
 };
+// ! Checkout section
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+function CorrectOn() {
+  let inputsList = document.getElementsByClassName("input-field");
+  let flag = true;
+  for (let i = 0; i < inputsList.length; i++) {
+    if (inputsList[i].value.length == 0) {
+      flag = false;
+    }
+  }
+  let counter = document.getElementsByClassName("CartCounter")[0];
+  if (counter.textContent == "" || counter.textContent == "0") {
+    flag = false;
+  }
+
+  if (flag) {
+    document.getElementById("CorectOverlay").style.display = "block";
+    setTimeout(function () {
+      document.getElementById("CorectOverlay").style.display = "none";
+    }, 2000);
+    document.getElementById("overlay").style.display = "none";
+
+    let form = document.getElementById("payForm");
+    form.reset();
+
+    localStorage.removeItem("products");
+    getLocalStorage();
+    setTimeout(function () {
+      location.reload();
+    }, 2100);
+  }
+}
+
+function CorrectOff() {
+  document.getElementById("CorectOverlay").style.display = "none";
+}
 
 getLocalStorage();
+
+// ! Payment card Code
+var cardDrop = document.getElementById("card-dropdown");
+var activeDropdown;
+cardDrop.addEventListener("click", function () {
+  var node;
+  for (var i = 0; i < this.childNodes.length - 1; i++)
+    node = this.childNodes[i];
+  if (node.className === "dropdown-select") {
+    node.classList.add("visible");
+    activeDropdown = node;
+  }
+});
+
+window.onclick = function (e) {
+  console.log(e.target.tagName);
+  console.log("dropdown");
+  console.log(activeDropdown);
+  if (e.target.tagName === "LI" && activeDropdown) {
+    if (e.target.innerHTML === "Master Card") {
+      document.getElementById("credit-card-image").src =
+        "https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png";
+      activeDropdown.classList.remove("visible");
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById("current-card").innerHTML;
+      document.getElementById("current-card").innerHTML = "Master Card";
+    } else if (e.target.innerHTML === "American Express") {
+      document.getElementById("credit-card-image").src =
+        "https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png";
+      activeDropdown.classList.remove("visible");
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById("current-card").innerHTML;
+      document.getElementById("current-card").innerHTML = "American Express";
+    } else if (e.target.innerHTML === "Visa") {
+      document.getElementById("credit-card-image").src =
+        "https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png";
+      activeDropdown.classList.remove("visible");
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById("current-card").innerHTML;
+      document.getElementById("current-card").innerHTML = "Visa";
+    }
+  } else if (e.target.className !== "dropdown-btn" && activeDropdown) {
+    activeDropdown.classList.remove("visible");
+    activeDropdown = null;
+  }
+};

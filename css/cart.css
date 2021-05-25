@@ -62,7 +62,7 @@ hr:last-child {
 .deletButton {
   background: transparent;
   border: none;
-  color: red;
+  color: rgba(0, 0, 0, 0.685);
   cursor: pointer;
   font-weight: bold;
 }
@@ -231,6 +231,9 @@ label {
   margin-bottom: 10px;
   display: block;
 }
+.product-info label {
+  display: inline !important;
+}
 
 .icon-container {
   margin-bottom: 20px;
@@ -283,4 +286,11 @@ span.price {
 #checkoutInfo td {
   padding: 0 40px;
   font-size: 24px;
+}
+
+#EmptyCart {
+  display: block;
+  font-size: 32px;
+  margin: 50px 44%;
+  color: rgba(0, 0, 0, 0.295);
 }
