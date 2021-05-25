@@ -10,12 +10,13 @@ html {
   display: block;
   z-index: 1000;
   position: fixed;
-  margin-left: 810px;
-  font-size: 13px;
-  margin-top: 15px;
-  color: red;
+  margin-left: 755px;
+  font-size: 18px;
+  margin-top: 14px;
+  color:#000;
   
 }
+
 /* -------------------------  start of rafef --------------------- */
 
 #about {
@@ -418,7 +419,6 @@ nav ul li a {
   width: 20px;
   padding: auto;
 }
-
 nav ul li i {
   text-decoration: none;
   color: rgb(5, 4, 4);
@@ -437,7 +437,14 @@ nav ul:hover .active {
 .active {
   border-bottom: 3px solid hsl(281, 36%, 64%);
 }
-
+#logo{
+  width: 50px;
+    height: 50px;
+    margin-left: 53%;
+    margin-top: -1px;
+    vertical-align: center;
+    position: absolute;
+}
 #myBtnToTop {
   position: fixed;
   bottom: 20px;
