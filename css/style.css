@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   width: 1280px;
   margin: 0 auto;
   scroll-behavior: smooth;
-}
+  width: 100%;
+} */
 
 /* -------------------------  start of rafef --------------------- */
 
@@ -48,21 +49,28 @@ html {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #mymain {
-  padding: 30px 0;
-  margin-top: 50px;
+  padding: 0px 0;
+  margin-top: 0px;
   background-color: #eee;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .effect {
-  display: inline-block;
-  width: 310px;
+  display: block;
+  width: 100%;
   height: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
 }
 
-#gallary {
-  position: relative;
-  margin-left: 12px;
+#gallary::after {
+  /* position: relative;
+  margin-left: 0px; */
+
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .overlay {
@@ -82,7 +90,12 @@ html {
 }
 
 .overlay-imgs {
-  display: inline-block;
+  /* display: inline-block;
+  padding-right: 6px; */
+  float: left;
+  width: 25%;
+  position: relative;
+
 }
 
 .overlay-imgs:hover .overlay {
@@ -90,15 +103,22 @@ html {
 }
 
 .locatin {
-  display: inline-block;
-  margin: 1px;
-}
+  /* display: inline-block; 
+  margin: 1px; */
+
+} 
 #mapid {
   display: inline-block;
-  padding: 20px;
-  margin-left: 17px;
+  padding: 3px;
+  margin-left: 0px;
+  margin-bottom: 10;
+
 }
 
+.mapouter{
+  float: left;
+  width: 50%;
+}
 #branches {
   padding: 20px;
 }
@@ -111,10 +131,10 @@ html {
 }
 
 .info {
-  margin: 20px;
+  margin: 0px;
   position: relative;
-  bottom: 430px;
-  left: 500px;
+  /* bottom: 430px;
+  left: 500px; */
 }
 .info li {
   font-size: 25px;
@@ -128,6 +148,7 @@ html {
   margin-left: 5px;
   padding-left: 20px;
 }
+
 
 /* -------------------------  end of rafef --------------------- */
 
@@ -364,6 +385,7 @@ form {
 *:after {
   box-sizing: inherit;
 }
+
 /* ------------------------- end of ethar -------------------*/
 
 /* --------------------------- start of qassem----------------------- */
