@@ -25,18 +25,19 @@ html {
 }
 
 .aboutp {
-  color: rgb(92, 90, 90);
-  font-family: "Caveat", cursive;
+  color: rgb(71, 68, 68);
+  font-family: "Amatic SC", cursive;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 35px;
   padding: 20px;
 }
 #myh2 {
-  color: #e077dd;
+  color: hsl(64, 45%, 66%);
   font-family: "Abril Fatface", cursive;
-  padding-left: 100px;
+  padding-left: 70px;
   font-weight: bold;
   font-size: 25px;
+  text-decoration: underline;
 }
 #aboutImg img {
   width: 40%;
@@ -46,6 +47,7 @@ html {
   margin-right: 20px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 #mymain {
   padding: 30px 0;
@@ -75,10 +77,12 @@ html {
   transition: 0.5s ease;
   opacity: 0;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   padding: 20px;
   text-align: center;
   margin-bottom: 3px;
+  font-family: "Amatic SC", cursive;
+
 }
 
 .overlay-imgs {
@@ -108,6 +112,7 @@ html {
   font-weight: bold;
   font-family: "Amatic SC", cursive;
   text-align: center;
+  /* background-color: hsl(64, 45%, 66%; */
 }
 
 .info {
@@ -177,7 +182,7 @@ opacity: 1;
   font-weight: lighter;
   font-size: x-small;
   font-weight: lighter;
-  color: rgb(61, 53, 53);
+  color: rgb(48, 42, 42);
 }
 #ourteam .button {
   margin-top: 10px;
@@ -185,8 +190,8 @@ opacity: 1;
   outline: 5;
   display: inline-block;
   padding: 8px;
-  color: rgba(204, 216, 202, 0.897);
-  background-color: rgb(27, 27, 27);
+  color: rgba(21, 46, 17, 0.897);
+  background-color: rgba(229, 235, 155, 0.999);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -204,15 +209,18 @@ opacity: 1;
   /* float: left; */
   display: inline-block;
   width: 220px;
-  background-color: rgba(92, 126, 121, 0.3);
+  background-color: rgba(230, 235, 155, 0.897);
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   /* font-family: "Amatic SC", cursive; */
   /* font-family: "Abril Fatface", cursive; */
-  font-family: "Amatic SC", cursive;
-  text-align: center;
-  font-size: larger;
-  font-weight: bolder;
+  /* font-family: "Amatic SC", cursive; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* text-align: center; */
+  /* font-size: larger; */
+  /* font-weight: bolder; */
 }
 
 #ourteam h1 {
@@ -220,8 +228,9 @@ opacity: 1;
   font-family: "Amatic SC", cursive;
   font-size: xx-large;
   font-weight: bolder;
-  padding: 20px;
+  padding: 10px;
   font-size: 100px;
+  background-color: rgba(229, 235, 155, 0.897);
 }
 #h2dena {
   padding-top: 20px;
@@ -242,42 +251,88 @@ opacity: 1;
   color: black;
 }
 footer {
-  background-color: rgba(225, 235, 223, 0.897);
+  background-color: rgba(229, 235, 155, 0.897);
   width: 100%;
 }
 form {
-  border: 3px solid #f1f1f1;
+  border: 3px solid #ffffff;
   font-family: "Amatic SC", cursive;
+  text-align: center;
 }
 #formh2 {
   font-family: "Amatic SC", cursive;
-  font-size: xx-large;
+  font-size: 80px;
+text-align: center;
+background: rgb(238, 241, 184);}
+
+#signup1{
+  font-size: 35px;
+  background: rgb(220, 230, 163);
+ }
+.container {
+  padding: 30px;
+  background-color: #f1f1f1;
 }
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(233, 207, 121);
+  color: #000;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #d3db84;
+  color: #000;
+  border: none;
+}
+
+
+
 /* -------------------------  end of dina --------------------- */
 /* ------------------------- start of ethar -------------------*/
 
 @keyframes headerAnimation {
   0% {
-    background-image: url("https://wallpaperaccess.com/full/196127.jpg");
+    background-image: url("https://i.pinimg.com/originals/6d/bb/2c/6dbb2c51a24f3d2d34a90516359ea352.jpg");
     background-size: cover;
   }
-  25% {
-    background-image: url("https://img1.goodfon.com/wallpaper/nbig/c/12/box-gift-chocolate-candy.jpg");
+  33% {
+    background-image: url("https://i.pinimg.com/originals/8d/46/19/8d46196113732eb815ad4312a9e2f2a3.jpg");
     background-size: cover;
   }
 
-  50% {
-    background-image: url("https://img4.goodfon.com/wallpaper/nbig/3/c3/konfety-rozovyi-fon-zhevatelnye-konfety-rozhok.jpg");
+  66% {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/223/432/non_2x/gift-box-with-red-ribbon-on-blue-background-free-photo.jpg");
     background-size: cover;
+    animation-delay: 5s;
   }
-  75% {
-    background-image: url("https://wallpaperaccess.com/full/5504190.jpg");
+  /* 60% {
+    background-image: url("https://image.freepik.com/free-photo/yellow-cotton-candy-white-background_42546-1943.jpg");
+    background-size: cover; */
+  
+  /* 75% {
+    background-image: url("https://image.freepik.com/free-vector/kawaii-cute-pastel-candy-sweet-desserts-with-funny-faces-cartoon-seamless-pattern-with-different-types-white-background-cafe-restaurant_71374-1148.jpg");
     background-size: cover;
-  }
+  } */
+  /* 90% {
+    background-image: url("https://i.pinimg.com/originals/e1/4f/38/e14f3856a3a675c36ac54bd186ba047a.jpg");
+    background-size: cover;
+    animation-delay: 10s;
+  } */
   100% {
-    background-image: url("https://s1.1zoom.me/big3/278/Sweets_Lollipop_Candy_Marmalade_Colored_background_555251_3000x2000.jpg");
+    background-image: url("https://i.pinimg.com/originals/6d/bb/2c/6dbb2c51a24f3d2d34a90516359ea352.jpg");
     background-size: cover;
   }
+
 }
 
 .hero-image {
@@ -285,19 +340,21 @@ form {
   position: relative;
   width: 100%;
   height: 600px;
-  animation: headerAnimation ease-in 10s infinite;
+  animation: headerAnimation ease-in 30s infinite;
 }
 .hero-text {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+top: 400px; 
+ left: 350px;
   font-size: 80px;
-  font-family: "Dancing Script", cursive;
-  color: rgb(0, 0, 0);
+  font-family: 'Reggae One', cursive;
+    color: rgb(0, 0, 0);
 }
 .hero-text #candygifts {
-  font-size: 40px;
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
+
 }
 /* text row css by Ethar */
 .text-row span,
@@ -309,8 +366,8 @@ form {
 .text-hover-dark-grey:hover,
 .text-dark-gray,
 .text-hover-dark-gray:hover {
-  color: #fff !important;
-  background-color: hsl(281, 36%, 64%) !important;
+  color: rgb(243, 243, 232) !important;
+  background-color: hsl(64, 45%, 66%) !important;
 }
 .text-padding-16 {
   padding-top: 16px !important;
@@ -324,8 +381,8 @@ form {
   display: block;
   height: 100%;
   line-height: 1.8;
-  font-size: 18px;
-  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-family: "Amatic SC", cursive;
 }
 
 .text-container:after,
@@ -368,13 +425,12 @@ form {
 
 /* --------------------------- start of qassem----------------------- */
 nav {
-  background-color: white;
   z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 70px;
   display: flex;
   align-items: center;
   margin-top: 0px;
@@ -382,20 +438,22 @@ nav {
   margin-bottom: 20px;
   /* background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202)); */
   width: 100%;
-  height: 55px;
-  margin-bottom: 100px;
+  height: 50px;
+  margin-bottom: 110px;
+  background:rgba(226, 223, 141, 0.445);
+  font-family: "Amatic SC", cursive;
 }
 
 nav ul li {
   display: inline;
-  width: 25px;
+  width: 30px;
   line-height: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: rgb(5, 4, 4);
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 25px;
   padding: 15px;
   width: 20px;
@@ -404,7 +462,7 @@ nav ul li a {
 
 nav ul li i {
   text-decoration: none;
-  color: rgb(5, 4, 4);
+  color: rgb(77, 62, 62);
   font-size: 20px;
   margin-left: 25px;
   padding: 15px;
@@ -412,13 +470,13 @@ nav ul li i {
   padding: auto;
 }
 nav ul li a:hover {
-  border-bottom: 3px solid hsl(281, 36%, 64%);
+  border-bottom: 3px solid hsl(0, 0%, 0%);
 }
 nav ul:hover .active {
   border-bottom: none;
 }
 .active {
-  border-bottom: 3px solid hsl(281, 36%, 64%);
+  border-bottom: 3px solid hsl(0, 0%, 0%);
 }
 
 #myBtnToTop {
@@ -436,5 +494,4 @@ nav ul:hover .active {
 #myBtnToTop:hover {
   color: #555;
 }
-
 /*  ------------------------end of qassem ---------------------- */
