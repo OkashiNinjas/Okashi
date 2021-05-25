@@ -13,8 +13,8 @@ html {
   padding: 20px 0 20px 20px;
 }
 .product-img img {
-  width: 320px;
-  height: 320px;
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
 }
 .product-info {
@@ -44,7 +44,7 @@ html {
 }
 .products-list {
   margin-top: 50px;
-  min-height: 400px;
+  min-height: 200px;
   background: #eee;
   border: 1px solid black;
 }
