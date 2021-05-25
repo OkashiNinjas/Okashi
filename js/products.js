@@ -82,7 +82,7 @@ product.prototype.render = function () {
 
   let a = document.createElement("a");
   a.className = "cart";
-  a.setAttribute("href", "#");
+  a.style.cursor = "pointer";
   let priceSpan = document.createElement("span");
   priceSpan.className = "price";
   priceSpan.textContent = `${this.pPrice} JD`;

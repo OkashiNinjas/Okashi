@@ -245,7 +245,7 @@ footer {
   background-color: rgba(225, 235, 223, 0.897);
   width: 100%;
 }
-form {
+#Denaform form {
   border: 3px solid #f1f1f1;
   font-family: "Amatic SC", cursive;
 }
@@ -293,7 +293,7 @@ form {
   top: 50%;
   left: 50%;
   font-size: 80px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Reggae One", cursive;
   color: rgb(0, 0, 0);
 }
 .hero-text #candygifts {

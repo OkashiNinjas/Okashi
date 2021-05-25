@@ -36,15 +36,25 @@ function dleteProduct(elemnt) {
   }
   productsList = local;
 
-  let TotalPrice = document.getElementById("TotalPrice");
+  let TotalPrice = document.getElementsByClassName("TotalPrice")[0];
+  TotalPrice.textContent = "";
+  TotalPrice = document.getElementsByClassName("TotalPrice")[1];
   TotalPrice.textContent = "";
   setLocalStorage();
   let pList = document.getElementsByClassName("plist")[0];
   pList.textContent = "";
+  let checkoutInfo = document.getElementById("checkoutInfo");
+  checkoutInfo.textContent = "";
+
   getLocalStorage();
   if (productsList.length == 0) {
-    let counter = document.getElementById("CartCounter");
+    let counter = document.getElementsByClassName("CartCounter")[0];
     counter.textContent = 0;
+    counter = document.getElementsByClassName("CartCounter")[1];
+    counter.textContent = 0;
+    TotalPrice = document.getElementsByClassName("TotalPrice")[0];
+    TotalPrice.textContent = 0;
+    TotalPrice = document.getElementsByClassName("TotalPrice")[1];
     TotalPrice.textContent = 0;
   }
 }
@@ -84,20 +94,6 @@ product.prototype.render = function () {
 
   productinfo.appendChild(document.createElement("br"));
 
-  // let quantity = document.createElement("select");
-  // quantity.setAttribute("id", `quantity${Index}`);
-  // quantity.setAttribute("name", `quantity${Index}`);
-  // quantity.setAttribute("onchange", `updateQuantity(this)`);
-
-  // let option;
-  // for (let i = 1; i <= 10; i++) {
-  //   option = document.createElement("option");
-  //   option.textContent = i;
-  //   option.setAttribute("value", i);
-  //   quantity.appendChild(option);
-  // }
-  // productinfo.appendChild(quantity);
-
   let deleteButton = document.createElement("button");
   deleteButton.className = "deletButton";
   deleteButton.textContent = "remove item";
@@ -120,9 +116,31 @@ product.prototype.render = function () {
   pList.appendChild(product);
   let hr = document.createElement("hr");
   pList.appendChild(hr);
-  let counter = document.getElementById("CartCounter");
+
+  let checkoutInfo = document.getElementById("checkoutInfo");
+  let tr = document.createElement("tr");
+  let td = document.createElement("td");
+  let span = document.createElement("span");
+  span.textContent = `${this.pNmae}`;
+  td.appendChild(span);
+  tr.appendChild(td);
+  td = document.createElement("td");
+  span = document.createElement("span");
+  span.textContent = this.pPrice;
+  td.appendChild(span);
+  span = document.createElement("span");
+  span.textContent = " JD";
+  td.appendChild(span);
+  tr.appendChild(td);
+  checkoutInfo.appendChild(tr);
+
+  let counter = document.getElementsByClassName("CartCounter")[0];
   counter.textContent = Index + 1;
-  let TotalPrice = document.getElementById("TotalPrice");
+  counter = document.getElementsByClassName("CartCounter")[1];
+  counter.textContent = Index + 1;
+  let TotalPrice = document.getElementsByClassName("TotalPrice")[0];
+  TotalPrice.textContent = Number(TotalPrice.textContent) + this.pPrice;
+  TotalPrice = document.getElementsByClassName("TotalPrice")[1];
   TotalPrice.textContent = Number(TotalPrice.textContent) + this.pPrice;
 };
 

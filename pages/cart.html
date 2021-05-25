@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/cart.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -66,17 +72,117 @@
       </div> -->
     </header>
     <main>
+      
+    <div id="overlay" >
+      <div class='container' >
+          <div class='window'">
+            <div class='order-info'>
+              <div class='order-info-content'>
+                <h2><i class="fa fa-shopping-cart"></i>  <span class="CartCounter">0</span></h2>
+                <h2>Order Summary </h2>
+                        <div class='line'></div>
+                  <div>
+                    <table id="checkoutInfo">
+                      <!-- <tr>
+                        <td><span>Product</span></td>
+                        <td><span>100</span> <span>JD</span></td>
+                      </tr> -->
+                    </table>
+                  </div>
+                  <div class='line'></div>
+                  <p>Total : <span class="TotalPrice">0</span> JD </p>
+        </div>
+        </div>
+                <div class='credit-info'>
+                  <div class='credit-info-content'>
+                    <table class='half-input-table'>
+                      <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                        <div class='dropdown-select'>
+                        <ul>
+                          <li>Master Card</li>
+                          <li>American Express</li>
+                          </ul></div>
+                        </div>
+                       </td></tr>
+                    </table>
+                    <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                    Card Number
+                    <input class='input-field'  required></input>
+                    Card Holder
+                    <input class='input-field' required></input>
+                    <table class='half-input-table'>
+                      <tr>
+                        <td> Expires
+                          <input class='input-field'required></input>
+                        </td>
+                        <td>CVC
+                          <input class='input-field'required ></input>
+                        </td>
+                      </tr>
+                    </table>
+                    <button onclick="CorrectOn()" class='pay-btn'>Checkout</button>
+        
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+            
+  
+    </div>
+    <div id="CorectOverlay" >
+      <div class='CorectContainer'onclick="off()" >
+          <div class='CorectWindow'">
+  
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+              <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+              <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+  
+            </svg>
+            <p class="success">Payment Successful!</p>
+  
+              </div>
+              
+            </div>
+            
+  
+    </div>
+    
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+      function CorrectOn() {
+      document.getElementById("CorectOverlay").style.display = "block";
+      setTimeout(function(){       document.getElementById("CorectOverlay").style.display = "none";
+ }, 1500);
+ document.getElementById("overlay").style.display = "none";
+
+    }
+    
+    function CorrectOff() {
+      document.getElementById("CorectOverlay").style.display = "none";
+    }
+      </script>
       <div class="products-list">
         <div class="plist"></div>
       </div>
-
-      <div id="Total">
-        <p>
-          Subtotal (<span id="CartCounter">0</span> items):
-          <span id="TotalPrice">0</span> JD
-        </p>
-        <button id="checkout">Proceed to checkout</button>
+      <div>
+        <div id="Total">
+          <p>
+            Subtotal (<span class="CartCounter">0</span> items):
+            <span class="TotalPrice">0</span> JD
+          </p>
+          <button onclick="on()" id="checkout">
+            Proceed to checkout
+          </button>
+        </div>
       </div>
+
     </main>
     <footer>
       <section id="socialmediabuttons">
