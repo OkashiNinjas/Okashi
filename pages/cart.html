@@ -7,6 +7,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
@@ -14,16 +15,93 @@
     />
   </head>
   <body>
-    <div class="products-list">
-      <div class="plist"></div>
-    </div>
+    <header>
+      <nav id="navBar">
+        <ul>
+          <li id="linkTop" class="links">
+            <a href="../index.html" class="linkss">Home</a>
+          </li>
+          <li id="linkGift" class="links">
+            <a href="../index.html#gallary" class="linkss">Gift& More</a>
+          </li>
+          <li id="linkContact" class="links">
+            <a href="../index.html#mapid" class="linkss">Contact</a>
+          </li>
+          <li id="linkAbout" class="links">
+            <a href="ourteam.html" class="linkss">About Us</a>
+          </li>
+          <li id="Product" class="links">
+            <a href="products.html" class="linkss">Products</a>
+          </li>
+          <li id="Cart" class="links">
+            <a href="cart.html" class="linkss">Cart</a>
+          </li>
+          <li style="position: relative">
+            <i class="fas fa-shopping-cart"></i>
+          </li>
+        </ul>
+      </nav>
 
-    <p>
-      Subtotal (<span id="CartCounter">0</span> items):
-      <span id="TotalPrice">0</span> JD
-    </p>
-    <button id="checkout">Proceed to checkout</button>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 id="okashi">Okashi</h1>
+          <p id="candygifts">Candy & Gifts Store</p>
+        </div>
+      </div>
+      <!-- <div id="gift">
+        <div class="crossfade">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+        </div>
 
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 id="okashi">Okashi</h1>
+            <p id="candygifts">Candy & Gifts Store</p>
+          </div>
+        </div>
+      </div> -->
+    </header>
+    <main>
+      <div class="products-list">
+        <div class="plist"></div>
+      </div>
+
+      <p>
+        Subtotal (<span id="CartCounter">0</span> items):
+        <span id="TotalPrice">0</span> JD
+      </p>
+      <button id="checkout">Proceed to checkout</button>
+    </main>
+    <footer>
+      <section id="socialmediabuttons">
+        <h2 id="h2dena">Follow us on :</h2>
+
+        <ul class="social">
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-github" aria-hidden="true"></i></li>
+          <li><i class="fa fa-snapchat" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+        </ul>
+      </section>
+      <section>
+        <p id="copyright">OkashiNinjas © 2021</p>
+        <p id="base">Based in Jordan</p>
+      </section>
+      <button onclick="scrollTopFunction()" id="myBtnToTop" title="Go to top">
+        <i class="fas fa-arrow-alt-circle-up"></i>
+      </button>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bc2402e035.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/cart.js"></script>
   </body>
 </html>

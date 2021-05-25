@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 html {
+  width: 1280px;
   margin: 0 auto;
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
 }
 
 /* -------------------------  start of rafef --------------------- */
@@ -242,7 +242,7 @@ opacity: 1;
 }
 footer {
   background-color: rgba(225, 235, 223, 0.897);
-  width: 1350px;
+  width: 100%;
 }
 form {
   border: 3px solid #f1f1f1;
