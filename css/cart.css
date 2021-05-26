@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 html {
-  width: 1366;
+  width: 1366px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -44,7 +44,8 @@ html {
   background-color: #eee;
 }
 .products-list {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding-top: 20px;
   min-height: 200px;
   background: #eee;
   border: 1px solid black;
@@ -73,13 +74,13 @@ hr:last-child {
   padding: 5px 10px;
   margin-bottom: 100px;
   cursor: pointer;
-  background: #22b877;
+  background: hsl(281, 36%, 64%);
   color: #fff;
   transition: all 0.2s ease;
 }
 #checkout:hover {
-  background: #22a877;
-  color: #eee;
+  background: hsla(281, 36%, 64%, 0.795);
+  color: #fff;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -277,7 +278,7 @@ span.price {
 
 /* ------------------------------ */
 #checkoutInfo td {
-  padding: 0 40px;
+  padding: 2px 25px;
   font-size: 24px;
 }
 
@@ -289,12 +290,17 @@ span.price {
 }
 #CloseForm {
   position: relative;
-  bottom: 100px;
-  left: 240px;
+  bottom: 80px;
+  left: 220px;
   font-size: 20px;
   color: white;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+#Total {
+}
+#Total p {
+  padding: 5px 30px;
 }
