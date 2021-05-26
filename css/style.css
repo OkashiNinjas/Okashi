@@ -509,7 +509,7 @@ nav ul li a:hover:last-child {
 
 .cartCounter {
   position: relative;
-  top: 12px;
+  top: 5px;
   right: 35px;
   font-size: 22px;
   border-radius: 50%;
