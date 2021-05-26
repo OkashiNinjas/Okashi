@@ -118,7 +118,7 @@ let p3 = new product(
   "Red roses",
   "Flower",
   15,
-  3,
+  4,
   "http://theluxediary.com/wp-content/uploads/2018/01/Maison-Des-Fleurs_Valentine%C2%B4s-Day_Gift-Idea_6.jpg"
 );
 let p4 = new product(
@@ -132,28 +132,28 @@ let p5 = new product(
   "Blue orchid",
   "Flower",
   15,
-  5,
+  4,
   "https://www.avasflowers.net/img/prod_img/avasflowers-lavender-orchid-plant.jpg"
 );
 let p6 = new product(
   "Candy Cake",
   "Candy",
   20,
-  4,
+  5,
   "https://fyf.tac-cdn.net/images/products/small/C-100.jpg?auto=webp&quality=60"
 );
 let p7 = new product(
   "Chocolate bouquet",
   "Chocolate",
   20,
-  3,
+  4,
   "http://artchocolat.com/wp-content/uploads/2013/08/Chocolate-Bouquets-4-360x360.jpg"
 );
 let p8 = new product(
   "Candy bouquet",
   "Candy",
   20,
-  5,
+  4,
   "https://www.en.1800flowers.co.il/images/itempics/bc555_large.jpg"
 );
 let p9 = new product(
@@ -174,14 +174,14 @@ let p11 = new product(
   "Chocolate box",
   "Chocolate",
   25,
-  3,
+  5,
   "https://www.puyricard.fr/140-large_default/square-box-of-chocolates-300-g.jpg"
 );
 let p12 = new product(
   "Candy Box",
   "Candy",
   20,
-  5,
+  4,
   "https://cdn03.ciceksepeti.com/cicek/kc52097-1/XL/turuncu-ruya-seker-sepeti-kc52097-1-1.jpg"
 );
 function addProductToCart(index) {
