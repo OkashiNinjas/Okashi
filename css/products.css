@@ -13,7 +13,9 @@ html {
   /* Dont change justify-content: center;  */
   justify-content: center;
 }
-
+.product span {
+  /* display: block; */
+}
 .product {
   position: relative;
   margin: 20px;
@@ -69,6 +71,7 @@ main {
 .product-category {
   opacity: 0.4;
   font-size: 20px;
+  display: block;
 }
 .product-name {
   margin-top: 10px;
@@ -82,6 +85,7 @@ main {
   bottom: 65px;
   right: 10px;
 }
+
 .product-rating {
   margin: 25px 0 5px;
   text-align: center;
