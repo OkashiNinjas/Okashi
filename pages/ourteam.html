@@ -7,6 +7,43 @@
     <title>Okashi</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/emoji/48/000000/wrapped-gift.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/emoji/48/000000/wrapped-gift.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -17,24 +54,24 @@
             <a href="../index.html" class="linkss">Home</a>
           </li>
           <li id="linkGift" class="links">
-            <a href="../index.html#gallary" class="linkss">Gift& More</a>
+            <a href="../index.html#gallary" class="linkss">Services</a>
           </li>
           <li id="linkContact" class="links">
-            <a href="../index.html#mapid" class="linkss">Contact</a>
+            <a href="../index.html#contact" class="linkss">Contact</a>
           </li>
           <li id="linkAbout" class="links">
-            <a href="ourteam.html" class="linkss">About Us</a>
+            <a href="ourteam.html" class="linkss">Our team</a>
           </li>
           <li id="Product" class="links">
             <a href="products.html" class="linkss">Products</a>
           </li>
           <li id="Cart" class="links">
-            <a href="cart.html" class="linkss">Cart</a>
-          </li>
-          <li style="position: relative">
-            <i class="fas fa-shopping-cart"></i>
+            <a href="cart.html" class="linkss"
+              ><i class="fas fa-shopping-cart"></i></a
+            ><span class="cartCounter" id="cart">0</span>
           </li>
         </ul>
+        <p id="carts" class="CounterProductInIndex"></p>
       </nav>
 
       <div class="hero-image">
@@ -43,22 +80,6 @@
           <p id="candygifts">Candy & Gifts Store</p>
         </div>
       </div>
-      <!-- <div id="gift">
-        <div class="crossfade">
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-        </div>
-
-        <div class="hero-image">
-          <div class="hero-text">
-            <h1 id="okashi">Okashi</h1>
-            <p id="candygifts">Candy & Gifts Store</p>
-          </div>
-        </div>
-      </div> -->
     </header>
     <main>
       <div id="denaday2">
@@ -154,5 +175,6 @@
       src="https://kit.fontawesome.com/bc2402e035.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/cartCount.js"></script>
   </body>
 </html>

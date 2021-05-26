@@ -58,8 +58,12 @@ main {
   border: 1px dashed black;
 }
 
-span {
-  display: block;
+#cart {
+  position: relative;
+  top: 12px;
+  right: 35px;
+  font-size: 22px;
+  border-radius: 50%;
 }
 
 .product-category {
@@ -142,7 +146,7 @@ span {
 
   width: 660px;
   height: 100%;
-  background-color: red;
+  background-color: hsl(281, 36%, 64%);
   position: absolute;
   left: -659px;
 }
