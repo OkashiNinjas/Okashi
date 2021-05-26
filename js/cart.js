@@ -66,6 +66,8 @@ function dleteProduct(elemnt) {
     TotalPrice.textContent = 0;
     TotalPrice = document.getElementsByClassName("TotalPrice")[1];
     TotalPrice.textContent = 0;
+    let navBarCart = document.getElementById("cart");
+    navBarCart.textContent = 0;
   }
 }
 
@@ -150,6 +152,8 @@ product.prototype.render = function () {
   counter.textContent = Index + 1;
   counter = document.getElementsByClassName("CartCounter")[1];
   counter.textContent = Index + 1;
+  let navBarCart = document.getElementById("cart");
+  navBarCart.textContent = Index + 1;
   let TotalPrice = document.getElementsByClassName("TotalPrice")[0];
   TotalPrice.textContent = Number(TotalPrice.textContent) + this.pPrice;
   TotalPrice = document.getElementsByClassName("TotalPrice")[1];

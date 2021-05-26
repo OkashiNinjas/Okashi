@@ -38,7 +38,7 @@ window.addEventListener("scroll", changeLinkStateNav);
 
 // eslint-disable-next-line no-var
 var buttonToTop = document.getElementById("myBtnToTop");
-
+let navBarsChange = document.getElementById("navBar");
 // var navBars = document.getElementById('navBar');
 window.onscroll = function () {
   scrollFunctionToTop();
@@ -46,13 +46,15 @@ window.onscroll = function () {
 
 function scrollFunctionToTop() {
   if (
-    document.body.scrollTop > 850 ||
-    document.documentElement.scrollTop > 850
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
   ) {
     buttonToTop.style.display = "block";
+    navBarsChange.style.backgroundColor = "hsl(281, 36%, 64%)";
     // navBars.style.backgroundColor= linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202));
   } else {
     buttonToTop.style.display = "none";
+    navBarsChange.style.backgroundColor = "transparent";
   }
 }
 

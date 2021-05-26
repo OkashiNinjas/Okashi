@@ -255,14 +255,6 @@ label {
   width: 100%;
 }
 
-.btn:hover {
-  background: rgb(255, 217, 2) !important;
-}
-
-a {
-  color: #2196f3;
-}
-
 hr {
   border: 1px solid lightgrey;
 }
