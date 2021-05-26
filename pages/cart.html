@@ -83,6 +83,7 @@
                   <div class='credit-info-content'>
                     <table class='half-input-table'>
                       <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                        <span id="CloseForm" onclick="off()">✖</span>
                         <div class='dropdown-select'>
                         <ul>
                           <li>Master Card</li>
@@ -94,16 +95,16 @@
                     <form id="payForm">
                     <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
                     Card Number
-                    <input class='input-field'  required></input>
+                    <input class='input-field'  required type="number"></input>
                     Card Holder
                     <input class='input-field' required></input>
                     <table class='half-input-table'>
                       <tr>
                         <td> Expires
-                          <input class='input-field'required></input>
+                          <input class='input-field'required type="number"> </input>
                         </td>
                         <td>CVC
-                          <input class='input-field'required ></input>
+                          <input class='input-field'required type="number"></input>
                         </td>
                       </tr>
                     </table>
@@ -116,7 +117,6 @@
               </div>
             </div>
             
-  
     </div>
     <div id="CorectOverlay" >
       <div class='CorectContainer'onclick="off()" >
@@ -133,10 +133,8 @@
               
             </div>
             
-  
     </div>
     
-
       <div class="products-list">
         <div class="plist"></div>
       </div>
