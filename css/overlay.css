@@ -42,7 +42,7 @@ ul li:hover {
 }
 .dropdown-select {
   position: absolute;
-  background: #77aaee;
+  background: hsl(281, 31%, 68%);
   text-align: left;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 5px;
@@ -65,7 +65,7 @@ ul li:hover {
   width: 100%;
 }
 .half-input-table td:first-of-type {
-  border-right: 10px solid #4488dd;
+  border-right: 10px solid hsl(281, 61%, 76%);
   width: 50%;
 }
 .window {
@@ -128,7 +128,7 @@ ul li:hover {
 }
 .pay-btn {
   border: none;
-  background: #22b877;
+  background: hsl(281, 36%, 64%);
   line-height: 2em;
   border-radius: 10px;
   font-size: 19px;
@@ -142,8 +142,8 @@ ul li:hover {
   transition: all 0.2s ease;
 }
 .pay-btn:hover {
-  background: #22a877;
-  color: #eee;
+  background: hsl(281, 50%, 63%);
+  color: #fff;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -178,7 +178,7 @@ ul li:hover {
   margin-right: auto;
 }
 .credit-info {
-  background: #4488dd;
+  background: hsl(281, 61%, 76%);
   height: 100%;
   width: 50%;
   color: #eee;
