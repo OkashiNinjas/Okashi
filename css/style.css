@@ -272,10 +272,6 @@ footer {
   display: block;
   color: white;
 }
-.container {
-  padding: 30px;
-  background-color: #f1f1f1;
-}
 
 input[type="text"],
 input[type="submit"] {
@@ -513,4 +509,32 @@ nav ul li a:hover:last-child {
   right: 35px;
   font-size: 22px;
   border-radius: 50%;
+}
+.card {
+  position: relative;
+}
+.card:hover .TeamOverlay {
+  opacity: 0.6;
+}
+.TeamOverlay {
+  width: 200px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+}
+.TeamOverlay div {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 25px !important;
+}
+.TeamOverlay div a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  padding: 30px;
+  background-color: #f1f1f1;
 }
